@@ -1,4 +1,4 @@
-let date = new Date();
+const date = new Date();
 	 day = date.getDay();
 	 hours = date.getHours();
 
@@ -14,18 +14,16 @@ function hello() {
 				return ('Добрый вечер!');
 			}
 		};
-document.write(hello());
-document.write('<br>');
+document.write(`${hello()} <br>`);
 
 	  
 function showDay(day) {
 	let days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
 	return days[day];
 };
-document.write('Сегодня: '+ showDay(day));
-document.write('<br>');
-document.write('Текущее время: ' + date.toLocaleTimeString());
-document.write('<br>');
+document.write(`Сегодня: ${showDay(day)} <br>`);
+document.write(`Текущее время: ${date.toLocaleTimeString()} <br>`);
+
 
 
 
